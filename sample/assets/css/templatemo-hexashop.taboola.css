@@ -1,0 +1,170 @@
+
+/*
+---------------------------------------------
+Taboola
+---------------------------------------------
+*/
+
+#taboola {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  border-bottom: 3px dotted #eee;
+}
+
+#taboola .section-heading {
+  margin-bottom: 60px;
+}
+
+#taboola .item .down-content {
+  padding-top: 30px;
+  position: relative;
+  z-index: 3;
+  background-color: #fff;
+}
+
+#taboola .item .down-content h4 {
+  font-size: 22px;
+  color: #2a2a2a;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+#taboola .item .down-content span {
+  font-size: 18px;
+  color: #a1a1a1;
+  font-weight: 500;
+  display: block;
+}
+
+#taboola .item .down-content ul.stars {
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+
+#taboola .item .down-content ul.stars li {
+  display: inline;
+  font-size: 13px;
+}
+
+#taboola .item .thumb .hover-content {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  bottom: -60px;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s;
+}
+
+#taboola .item .thumb:hover .hover-content {
+  bottom: 30px;
+  opacity: 1;
+  visibility: visible;
+}
+
+#taboola .item .thumb {
+  position: relative;
+}
+
+#taboola .item .thumb .hover-content ul li {
+  display: inline;
+  margin: 0px 10px;
+}
+
+#taboola .item .thumb .hover-content ul li a {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+  color: #2a2a2a;
+  background-color: #fff;
+}
+
+
+#taboola .owl-nav {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  transform: translateY(-25px);
+}
+
+#taboola .owl-dots {
+  display: none;
+}
+    
+#taboola .owl-nav .owl-prev{
+  position: absolute;
+  left: -80px;
+  outline: none;
+}
+
+#taboola .owl-nav .owl-prev span,
+#taboola .owl-nav .owl-next span {
+  opacity: 0;
+}
+
+#taboola .owl-nav .owl-prev:before {
+  display: inline-block;
+  font-family: 'FontAwesome';
+  color: #2a2a2a;
+  font-size: 25px;
+  font-weight: 700;
+  content: '\f104';
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  line-height: 48px;
+  border :1px solid #2a2a2a;
+}
+
+#taboola .owl-nav .owl-prev {
+  opacity: 0.75;
+  transition: all .5s;
+}
+
+#taboola .owl-nav .owl-prev:hover {
+  opacity: 1;
+}
+
+#taboola .owl-nav .owl-next {
+  opacity: 0.75;
+  transition: all .5s;
+}
+
+#taboola .owl-nav .owl-next:hover {
+  opacity: 1;
+}
+
+#taboola .owl-nav .owl-next{
+  outline: none;
+  position: absolute;
+  right: -85px;
+}
+
+#taboola .owl-nav .owl-next:before {
+  display: inline-block;
+  font-family: 'FontAwesome';
+  color: #2a2a2a;
+  font-size: 25px;
+  font-weight: 700;
+  content: '\f105';
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  line-height: 48px;
+  border :1px solid #2a2a2a;
+}
+
+
+#taboola .image-patch {
+  width: 290px; 
+  height: 306px;
+}
+
+#taboola .item{
+  max-width: 290px;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "taboola",
+  "version": "1.0.0",
+  "description": "taboola test",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "test": "jest --env jsdom",
+    "dev": "parcel src/taboola.ts src/index.html",
+    "build": "parcel build src/taboola.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boaz-foux/taboola.git"
+  },
+  "author": "Boaz Foux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boaz-foux/taboola/issues"
+  },
+  "homepage": "https://github.com/boaz-foux/taboola#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.5",
+    "jsdom": "^19.0.0",
+    "mocha": "^9.1.3",
+    "parcel": "^2.0.1",
+    "ts-jest": "^27.1.2",
+    "typescript": "^4.5.4"
+  }
+}
