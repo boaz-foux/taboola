@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --env jsdom",
     "dev": "parcel src/taboola.ts src/index.html",
-    "build": "parcel build src/taboola.ts"
+    "build": "parcel build src/taboola.ts src/index.html --public-url ./"
   },
   "repository": {
     "type": "git",

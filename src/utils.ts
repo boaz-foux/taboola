@@ -24,7 +24,7 @@ export const inject = async (
             .replace(/("|>|<)/g, ''); // against xss
     });
 
-    [ ...temp.content.querySelectorAll('[if],[not]')].forEach((element) => {
+    Array.from(temp.content.querySelectorAll('[if],[not]')).forEach((element) => {
         console.log(element.getAttribute('if'));
         const flag = (element.hasAttribute('if') && !!element.getAttribute('if'))
         || (element.hasAttribute('not') && !element.getAttribute('not'));

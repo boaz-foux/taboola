@@ -47,7 +47,7 @@ export class CellInjector extends Base {
         inject(this, values[symbols.template], values[symbols.data])
             .then(() => {
                 const target = values[symbols.data]["origin"] === "sponsored" ? '_blank' : '_self';
-                [...this.querySelectorAll('a')].forEach((anchor) => {
+                Array.from(this.querySelectorAll('a')).forEach((anchor) => {
                     anchor.setAttribute("target", target);
                 });
             });

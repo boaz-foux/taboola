@@ -22,8 +22,8 @@ window['taboola'] = mainInterface;
 export default mainInterface;
 
 {   // auto loading with apikey and xid attributes
-    const apikey = document.currentScript.getAttribute('apikey');
-    const id = Number(document.currentScript.getAttribute('xid'));
+    const apikey = document?.currentScript?.getAttribute('apikey');
+    const id = Number(document?.currentScript?.getAttribute('xid'));
     if (apikey && id) {
         mainInterface.init({ apikey, id })
             .then(() => {
